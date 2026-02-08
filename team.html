@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>P1ΞON | Team</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'chakra': ['Chakra Petch', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+      animation: fadeIn 0.6s ease-out forwards;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="font-chakra bg-gray-50 text-gray-800">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold text-gray-800">P1ΞON</a>
+      
+      <nav class="hidden md:flex">
+        <ul class="flex space-x-6">
+          <li><a href="index.html" class="text-gray-700 hover:text-blue-600 transition">Home</a></li>
+          <li><a href="index.html#about" class="text-gray-700 hover:text-blue-600 transition">About</a></li>
+          <li><a href="services.html" class="text-gray-700 hover:text-blue-600 transition">Services</a></li>
+          <li><a href="projects.html" class="text-gray-700 hover:text-blue-600 transition">Projects</a></li>
+          <li><a href="team.html" class="text-indigo-600 font-semibold">Team</a></li>
+          <li><a href="index.html#build-with-us" class="text-green-600 font-semibold hover:text-green-700 transition">Build With Us</a></li>
+        </ul>
+      </nav>
+      
+      <button id="hamburger" class="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100" aria-label="Open menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    
+    <nav id="mobileNav" class="hidden md:hidden bg-white border-t px-4 py-4">
+      <ul class="space-y-3">
+        <li><a href="index.html" class="block text-gray-700">Home</a></li>
+        <li><a href="index.html#about" class="block text-gray-700">About</a></li>
+        <li><a href="services.html" class="block text-gray-700">Services</a></li>
+        <li><a href="projects.html" class="block text-gray-700">Projects</a></li>
+        <li><a href="team.html" class="block text-indigo-600 font-semibold">Team</a></li>
+        <li><a href="index.html#build-with-us" class="block text-green-600 font-semibold">Build With Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 py-20 md:py-28">
+      <div class="max-w-5xl mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in">Our Team</h1>
+        <p class="text-indigo-100 text-lg md:text-xl max-w-2xl mx-auto animate-fade-in">
+          Meet the people behind P1XION. We believe in shared ideas, shared work, and shared success.
+        </p>
+      </div>
+    </section>
+
+    <!-- Team Members -->
+    <section class="py-20 md:py-28 bg-white">
+      <div class="max-w-6xl mx-auto px-4">
+        
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">The Builders</h2>
+          <p class="text-gray-500 max-w-2xl mx-auto">Every project is a team effort. Here are the people making it happen.</p>
+        </div>
+
+        <div id="teamGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Team members loaded dynamically from data/team.json -->
+          <div class="col-span-full text-center py-12 text-gray-500">Loading team...</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Join Section -->
+    <section class="py-20 bg-gradient-to-br from-gray-900 to-black text-white">
+      <div class="max-w-5xl mx-auto px-4">
+        
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Build With Us?</h2>
+          <p class="text-gray-400 max-w-2xl mx-auto">P1XION isn't a typical company. It's a collaborative space where ideas come to life and success is shared.</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+            <div class="w-14 h-14 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center mb-4">
+              <i class="fas fa-lightbulb text-white text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Ideas Provided</h3>
+            <p class="text-gray-400 text-sm">Don't have an idea? We do. You bring skills, we bring the vision and work together.</p>
+          </div>
+          
+          <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+            <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center mb-4">
+              <i class="fas fa-users text-white text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">True Collaboration</h3>
+            <p class="text-gray-400 text-sm">Work alongside passionate builders. Every voice matters, every contribution counts.</p>
+          </div>
+          
+          <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+            <div class="w-14 h-14 bg-gradient-to-br from-yellow-500 to-orange-600 rounded-xl flex items-center justify-center mb-4">
+              <i class="fas fa-coins text-white text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Equal Profit Share</h3>
+            <p class="text-gray-400 text-sm">When we succeed, everyone succeeds. Profits are shared equally among all contributors.</p>
+          </div>
+          
+          <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+            <div class="w-14 h-14 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center mb-4">
+              <i class="fas fa-graduation-cap text-white text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Learn By Doing</h3>
+            <p class="text-gray-400 text-sm">Apply what you've studied on real projects. Gain experience that matters.</p>
+          </div>
+          
+          <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+            <div class="w-14 h-14 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center mb-4">
+              <i class="fas fa-briefcase text-white text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Portfolio Builder</h3>
+            <p class="text-gray-400 text-sm">Work on real products used by real people. Build a portfolio that speaks volumes.</p>
+          </div>
+          
+          <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+            <div class="w-14 h-14 bg-gradient-to-br from-red-500 to-rose-600 rounded-xl flex items-center justify-center mb-4">
+              <i class="fas fa-heart text-white text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Passion First</h3>
+            <p class="text-gray-400 text-sm">We look for genuine interest and willingness to contribute. Skills can be learned.</p>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-green-500 to-emerald-600">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Build Something Great?</h2>
+        <p class="text-green-100 text-lg mb-8 max-w-2xl mx-auto">
+          We're always looking for passionate people who want to turn ideas into reality. If you're ready to work, learn, and grow together—we want to hear from you.
+        </p>
+        <a href="https://wa.me/+917559981062?text=Hi!%20I%E2%80%99d%20like%20to%20join%20P1XION%20and%20build%20together!" target="_blank" rel="noopener" class="inline-flex items-center bg-white text-green-600 px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg">
+          <i class="fab fa-whatsapp text-2xl mr-3"></i>
+          Chat on WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-br from-gray-900 to-black text-white py-12">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+        <div>
+          <a href="index.html" class="text-2xl font-bold mb-4 block">P1ΞON</a>
+          <p class="text-gray-400">Brightening the Future. Building together.</p>
+        </div>
+        <div class="flex space-x-6">
+          <a href="https://www.instagram.com/p1xion.official" aria-label="Instagram" class="text-gray-400 hover:text-pink-400 transition-all duration-300">
+            <i class="fab fa-instagram text-2xl"></i>
+          </a>
+          <a href="https://www.youtube.com/@p1xion" aria-label="YouTube" class="text-gray-400 hover:text-red-400 transition-all duration-300">
+            <i class="fab fa-youtube text-2xl"></i>
+          </a>
+          <a href="https://wa.me/+917559981062" target="_blank" rel="noopener" aria-label="WhatsApp" class="text-gray-400 hover:text-green-400 transition-all duration-300">
+            <i class="fab fa-whatsapp text-2xl"></i>
+          </a>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <p class="text-gray-500 text-sm">© <span id="year"></span> P1XION. All rights reserved.</p>
+        <div class="flex gap-6 text-sm">
+          <a href="services.html" class="text-gray-400 hover:text-white transition">Services</a>
+          <a href="projects.html" class="text-gray-400 hover:text-white transition">Projects</a>
+          <a href="team.html" class="text-gray-400 hover:text-white transition">Team</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => mobileNav.classList.toggle('hidden'));
+    mobileNav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => mobileNav.classList.add('hidden')));
+
+    // Load team from JSON
+    async function loadTeam() {
+      try {
+        const response = await fetch('data/team.json');
+        const team = await response.json();
+        renderTeam(team);
+      } catch (error) {
+        console.error('Error loading team:', error);
+        document.getElementById('teamGrid').innerHTML = '<div class="col-span-full text-center py-12 text-red-500">Failed to load team</div>';
+      }
+    }
+
+    function renderTeam(team) {
+      const grid = document.getElementById('teamGrid');
+      
+      // Render actual team members
+      let html = team.map(member => `
+        <div class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-3xl p-8 text-center transform hover:-translate-y-2 transition-all duration-300 hover:shadow-xl">
+          <div class="w-32 h-32 mx-auto mb-6 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg">
+            <img src="${member.photo}" alt="${member.name}" class="w-24 h-24 rounded-full object-contain" />
+          </div>
+          ${member.isFounder ? '<span class="inline-block bg-indigo-100 text-indigo-700 text-xs font-semibold px-3 py-1 rounded-full mb-4">Founder</span>' : ''}
+          <h3 class="text-xl font-bold text-gray-800 mb-2">${member.name}</h3>
+          <p class="text-gray-500 mb-6">${member.role}</p>
+          <p class="text-gray-600 text-sm mb-6">${member.bio}</p>
+          <div class="flex justify-center gap-4">
+            ${member.social?.instagram ? `<a href="${member.social.instagram}" class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-gray-500 hover:text-pink-500 hover:shadow-md transition-all duration-300"><i class="fab fa-instagram"></i></a>` : ''}
+            ${member.social?.whatsapp ? `<a href="${member.social.whatsapp}" class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-gray-500 hover:text-green-500 hover:shadow-md transition-all duration-300"><i class="fab fa-whatsapp"></i></a>` : ''}
+            ${member.social?.github ? `<a href="${member.social.github}" class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-gray-500 hover:text-gray-800 hover:shadow-md transition-all duration-300"><i class="fab fa-github"></i></a>` : ''}
+            ${member.social?.linkedin ? `<a href="${member.social.linkedin}" class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-gray-500 hover:text-blue-600 hover:shadow-md transition-all duration-300"><i class="fab fa-linkedin"></i></a>` : ''}
+            ${member.portfolio ? `<a href="${member.portfolio}" target="_blank" rel="noopener" class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-gray-500 hover:text-blue-500 hover:shadow-md transition-all duration-300"><i class="fas fa-globe"></i></a>` : ''}
+          </div>
+        </div>
+      `).join('');
+      
+      // Add "Join Us" placeholder cards
+      const joinCards = [
+        { title: 'You Could Be Here', subtitle: 'Developer / Designer / Marketer' },
+        { title: 'Your Spot Awaits', subtitle: 'Bring Your Skills' }
+      ];
+      
+      // Only show join cards if we have less than 3 members
+      const slotsToFill = Math.max(0, 3 - team.length);
+      for (let i = 0; i < Math.min(slotsToFill, joinCards.length); i++) {
+        html += `
+          <div class="bg-gray-100 border-2 border-dashed border-gray-300 rounded-3xl p-8 text-center flex flex-col items-center justify-center hover:border-green-400 hover:bg-green-50 transition-all duration-300 group cursor-pointer" onclick="window.location.href='index.html#build-with-us'">
+            <div class="w-32 h-32 mb-6 border-2 border-dashed border-gray-300 rounded-full flex items-center justify-center group-hover:border-green-400 transition-colors">
+              <i class="fas fa-user-plus text-4xl text-gray-300 group-hover:text-green-500 transition-colors"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-400 mb-2 group-hover:text-green-600 transition-colors">${joinCards[i].title}</h3>
+            <p class="text-gray-400 mb-6 group-hover:text-green-600 transition-colors">${joinCards[i].subtitle}</p>
+            <a href="index.html#build-with-us" class="inline-flex items-center text-gray-400 group-hover:text-green-600 font-semibold transition-colors">
+              Join the Team
+              <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+              </svg>
+            </a>
+          </div>
+        `;
+      }
+      
+      grid.innerHTML = html;
+    }
+
+    loadTeam();
+  </script>
+</body>
+</html>

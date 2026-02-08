@@ -1,0 +1,15 @@
+[
+  {
+    "id": "sinan",
+    "name": "Muhammed Sinan P",
+    "role": "Founder & Developer",
+    "photo": "assets/team/pic.jpg",
+    "bio": "Passionate about building products that matter. Leading P1XION with a vision of collaborative innovation and equal opportunity.",
+    "isFounder": true,
+    "portfolio": "https://sinanp1x.vercel.app",
+    "social": {
+      "instagram": "https://www.instagram.com/p1xion.official",
+      "whatsapp": "https://wa.me/+917559981062"
+    }
+  }
+]

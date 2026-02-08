@@ -1,0 +1,62 @@
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:10px;border:1px solid transparent;background:transparent;color:var(--text);cursor:pointer;text-decoration:none;font-weight:700}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:linear-gradient(90deg,var(--accent),#3aa0ff);color:white;border-color:rgba(0,0,0,0.04);box-shadow:0 6px 12px rgba(31,111,235,0.08)}
+
+/* Cards and project items */
+.project-item{width:320px;background:var(--card);border-radius:14px;box-shadow:0 8px 16px rgba(16,24,40,0.06);border:1px solid rgba(16,24,40,0.04);overflow:hidden;cursor:pointer;display:flex;flex-direction:column}
+.project-media{height:180px;background:linear-gradient(180deg,#f6f8fb,#ffffff);display:flex;align-items:center;justify-content:center}
+.project-media img{max-height:150px;max-width:150px;object-fit:contain}
+.project-body{padding:12px}
+.project-name{font-weight:800}
+.project-shortn{margin-top:6px}
+.project-meta{display:flex;justify-content:space-between;font-size:13px;margin-top:8px;color:var(--muted)}
+
+/* Modal */
+.modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(10,12,20,0.28);padding:24px}
+.modal[aria-hidden="false"]{display:flex}
+.modal-card{background:var(--card);padding:18px;border-radius:14px;max-width:680px;width:100%;box-shadow:0 10px 24px rgba(16,24,40,0.08);border:1px solid rgba(16,24,40,0.04)}
+.modal-close{position:absolute;right:28px;top:28px;background:transparent;border:0;font-size:18px;cursor:pointer}
+
+/* Small helpers */
+.kicker{font-weight:700;color:var(--accent)}
+.section-lead1{font-weight:700}
+
+/* Accessibility focus styles */
+a:focus,button:focus,.project-item:focus{outline:3px solid rgba(31,111,235,0.18);outline-offset:3px}
+
+/* Projects strip scroll styling */
+.strip::-webkit-scrollbar{height:10px}
+.strip::-webkit-scrollbar-thumb{background:rgba(15,23,42,0.08);border-radius:10px}
+
+/* Service card styles */
+.card-glass{background:linear-gradient(180deg, rgba(255,255,255,0.7), rgba(255,255,255,0.85));border-radius:12px;padding:0;overflow:hidden;border:1px solid rgba(16,24,40,0.04);box-shadow:var(--shadow)}
+.service-item{display:flex;flex-direction:column;align-items:stretch;padding:0;border:0;cursor:pointer;text-align:left}
+.service-bg{height:160px;background-size:cover;background-position:center}
+.service-content{padding:18px}
+.service-item .title{font-weight:800}
+.service-short{font-size:0.95rem;margin-top:6px}
+
+/* Modal image helpers */
+.modal-logo{width:84px;height:84px;object-fit:contain;border-radius:8px;background:var(--bg);padding:6px}
+.modal-clogo{width:36px;height:36px;object-fit:cover;border-radius:6px}
+.modal-scroll-content{max-height:60vh;overflow:auto;padding-right:8px}
+
+/* Responsive adjustments for larger cards on small screens */
+@media (max-width:768px){
+	.project-item{width:260px}
+	.project-media{height:160px}
+	.project-media img{max-height:120px;max-width:120px}
+	.service-bg{height:140px}
+	.card{padding:20px}
+}
+
+@media (max-width:480px){
+	.project-item{width:220px}
+	.project-media{height:130px}
+	.project-media img{max-height:110px;max-width:110px}
+	.service-bg{height:120px}
+	.card{padding:16px}
+}
+

@@ -1,0 +1,11 @@
+[
+  {
+    "id": "Digital-Library",
+    "title": "Al-Burhan Digital Library",
+    "logo": "assets/project/Digi-lib.png",
+    "short": "A modern digital library system for campus book management",
+    "status": "getting to start",
+    "type": "PWA",
+    "website": "https://sinanp1x.vercel.app/"
+  }
+]

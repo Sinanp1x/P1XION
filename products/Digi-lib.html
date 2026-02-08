@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P1XION - Digi-lib</title>
+    
+    <!-- Include Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configure Tailwind if needed -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'chakra': ['Chakra Petch', 'sans-serif'],
+                        'merienda': ['Merienda', 'cursive'],
+                        'oxanium': ['Oxanium', 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Add Font Awesome for icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Merienda:wght@300..900&family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Add any custom styles if needed -->
+    <style>
+        /* Add custom animations or styles here */
+    </style>
+</head>
+<body class="font-chakra bg-gray-50 text-gray-800">
+    
+    <!-- Header Section -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <a href="index.html" class="text-2xl font-bold text-gray-800">P1ΞON</a>
+
+        <nav class="hidden md:flex">
+            <ul class="flex space-x-6">
+            <li><a href="../index.html#home" class="text-gray-700 hover:text-blue-600 transition">Home</a></li>
+            <li><a href="../services.html" class="text-gray-700 hover:text-blue-600 transition">Services</a></li>
+            <li><a href="../index.html#projects" class="text-gray-700 hover:text-blue-600 transition">Projects</a></li>
+            <li><a href="../team.html" class="text-gray-700 hover:text-blue-600 transition">Team</a></li>
+            <li><a href="../index.html#contact" class="text-gray-700 hover:text-blue-600 transition">Contact</a></li>
+            </ul>
+        </nav>
+
+        <button id="hamburger" class="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100" aria-controls="navLinks" aria-expanded="false" aria-label="Open menu">
+            <span class="block w-5 h-0.5 bg-current mb-1"></span>
+            <span class="block w-5 h-0.5 bg-current mb-1"></span>
+            <span class="block w-5 h-0.5 bg-current"></span>
+        </button>
+        </div>
+    </header>
+    <!-- Use sticky header with navigation, logo, hamburger menu -->
+    <!-- Style with Tailwind: sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm -->
+    
+    <!-- Main Content Section -->
+    <main class="bg-gradient-to-br from-blue-50 to-indigo-50">
+
+        <section id="Intro" class="overflow-hidden py-8 border-b-2 border-b-black-300 shadow-md bg-gradient-to-l from-blue-200 to-purple-100">
+            <div class="max-w-7xl items-center mx-auto">
+            <div class="h-[80vh] grid md:grid-cols-2 gap-8 items-center relative overflow-visible">
+            <div class="p-5 backdrop-blur-md text-left bg-black/10 rounded-xl z-10">
+            <h2 class="text-5xl font-bold bg-gradient-to-tr from-green-300 to-blue-500 bg-clip-text text-transparent font-bold mb-2" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.13);">Are You Still Burdened With The Old LMS?</h2>
+            <p class="text-lg font-chakra text-gray-900 mb-3">Library Management System (LMS), Are you still in the Old Library Management System?, if "Yes" then you are at the right place.</p>
+            <p class="text-xl font-chakra text-blue-800 mb-8">We reimagine the way libraries operates, making them more efficient, organised and digitalized!.</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1670228260388-c5e536d0001c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870" alt="Digi-lib Banner" class="absolute -top-100 -right-10 object-cover h-[100vh] shadow-xl transform scale-x-[-1]">
+            </div>
+            </div>
+        </section>
+
+        <section id="features" class="border-b bg-gradient-to-r from-blue-100 to-purple-100">
+            <div class="max-w-7xl mx-auto p-8 h-[90vh] ">
+            <h1 class="text-5xl font-bold text-gray-800 mb-6 text-center bg-gradient-to-tr from-green-300 to-blue-400 bg-clip-text text-transparent">Why Digi-lib?</h1>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 animate-fade-in">
+                <h3 class="text-2xl font-semibold mb-4 text-blue-600">User-Friendly Interface</h3>
+                <p class="text-gray-600">Intuitive and easy-to-navigate interface for both librarians and users.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 animate-fade-in">
+                <h3 class="text-2xl font-semibold mb-4 text-blue-600">Comprehensive Cataloging</h3>
+                <p class="text-gray-600">Efficiently manage and categorize books, journals, and digital resources.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 animate-fade-in">
+                <h3 class="text-2xl font-semibold mb-4 text-blue-600">Advanced Search Options</h3>
+                <p class="text-gray-600">Powerful search tools to quickly find and access library materials.</p>
+                </div>
+            </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- Footer Section -->
+    <footer class="bg-gradient-to-br from-gray-900 to-black text-white py-16">
+        <div class="max-w-7xl mx-auto px-4">
+        <div class="grid md:grid-cols-3 gap-12">
+            <div class="animate-fade-in">
+            <a href="/" class="text-3xl font-bold mb-6 block bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">P1Xion</a>
+            <p class="text-gray-400 text-lg leading-relaxed">
+                Building Your Ideas. Powering Your Future.
+            </p>
+            </div>
+            <div class="animate-slide-in-left">
+            <h4 class="text-xl font-semibold mb-6 bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">Quick Links</h4>
+            <ul class="space-y-3">
+                <li><a href="services.html" class="text-gray-400 hover:text-white transition-all duration-300 transform hover:translate-x-2 inline-block">Services</a></li>
+                <li><a href="#projects" class="text-gray-400 hover:text-white transition-all duration-300 transform hover:translate-x-2 inline-block">Projects</a></li>
+                <li><a href="#contact" class="text-gray-400 hover:text-white transition-all duration-300 transform hover:translate-x-2 inline-block">Contact</a></li>
+            </ul>
+            </div>
+            <div class="animate-slide-in-right">
+            <h4 class="text-xl font-semibold mb-6 bg-gradient-to-r from-pink-400 to-red-500 bg-clip-text text-transparent">Follow Us</h4>
+            <div class="flex space-x-6">
+                <a href="https://www.instagram.com/" aria-label="Instagram" class="text-gray-400 hover:text-pink-400 transition-all duration-300 transform hover:scale-125">
+                <i class="fab fa-instagram text-3xl"></i>
+                </a>
+                <a href="https://www.youtube.com/@p1xion" aria-label="YouTube" class="text-gray-400 hover:text-red-400 transition-all duration-300 transform hover:scale-125">
+                <i class="fab fa-youtube text-3xl"></i>
+                </a>
+                <a href="https://www.facebook.com/" aria-label="Facebook" class="text-gray-400 hover:text-blue-400 transition-all duration-300 transform hover:scale-125">
+                <i class="fab fa-facebook-f text-3xl"></i>
+                </a>
+            </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+            <p class="text-gray-500">© <span id="year"></span> P1Xion. All rights reserved. <a href="#" id="backToTop" class="text-gray-400 hover:text-white transition-all duration-300 transform hover:scale-110 inline-block" aria-label="Back to top">
+            <svg class="w-5 h-5 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+            </svg>
+            </a></p>
+        </div>
+        </div>
+    </footer>
+    <!-- Style with gradient background and responsive grid -->
+    
+    <!-- Scripts -->
+    <!-- Include main.js for navigation -->
+    <!-- Add render.js for projects rendering -->
+    <!-- Add modals.js for project modals -->
+    
+    <script src="js/main.js"></script>
+    <script type="module" src="js/render.js"></script>
+    <script type="module" src="js/modals.js"></script>
+    
+    <!-- Add any page-specific scripts -->
+    <script>
+        // Initialize projects rendering
+        document.addEventListener('DOMContentLoaded', () => {
+            // Call renderProjects() from render.js
+        });
+    </script>
+</body>
+</html>

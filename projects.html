@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>P1ΞON | Projects</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'chakra': ['Chakra Petch', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+      animation: fadeIn 0.6s ease-out forwards;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="font-chakra bg-gray-50 text-gray-800">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold text-gray-800">P1ΞON</a>
+      
+      <nav class="hidden md:flex">
+        <ul class="flex space-x-6">
+          <li><a href="index.html" class="text-gray-700 hover:text-blue-600 transition">Home</a></li>
+          <li><a href="index.html#about" class="text-gray-700 hover:text-blue-600 transition">About</a></li>
+          <li><a href="services.html" class="text-gray-700 hover:text-blue-600 transition">Services</a></li>
+          <li><a href="projects.html" class="text-purple-600 font-semibold">Projects</a></li>
+          <li><a href="team.html" class="text-gray-700 hover:text-blue-600 transition">Team</a></li>
+          <li><a href="index.html#build-with-us" class="text-green-600 font-semibold hover:text-green-700 transition">Build With Us</a></li>
+        </ul>
+      </nav>
+      
+      <button id="hamburger" class="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100" aria-label="Open menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    
+    <nav id="mobileNav" class="hidden md:hidden bg-white border-t px-4 py-4">
+      <ul class="space-y-3">
+        <li><a href="index.html" class="block text-gray-700">Home</a></li>
+        <li><a href="index.html#about" class="block text-gray-700">About</a></li>
+        <li><a href="services.html" class="block text-gray-700">Services</a></li>
+        <li><a href="projects.html" class="block text-purple-600 font-semibold">Projects</a></li>
+        <li><a href="team.html" class="block text-gray-700">Team</a></li>
+        <li><a href="index.html#build-with-us" class="block text-green-600 font-semibold">Build With Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="bg-gradient-to-br from-purple-900 via-indigo-900 to-blue-900 py-20 md:py-28">
+      <div class="max-w-5xl mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in">Our Projects</h1>
+        <p class="text-purple-100 text-lg md:text-xl max-w-2xl mx-auto animate-fade-in">
+          Real products we've built. Each project represents collaborative effort and shared success.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Container -->
+    <section id="projectsContainer" class="py-20 md:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center py-12 text-gray-500">Loading projects...</div>
+      </div>
+    </section>
+
+    <!-- More Projects Coming -->
+    <section class="py-16 bg-gray-100">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <div class="w-20 h-20 mx-auto mb-6 bg-gray-200 rounded-full flex items-center justify-center">
+          <i class="fas fa-rocket text-gray-400 text-3xl"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-gray-800 mb-4">More Projects Coming Soon</h3>
+        <p class="text-gray-600 mb-8">We're working on exciting new projects. Want to be part of the next one?</p>
+        <a href="index.html#build-with-us" class="inline-flex items-center bg-gradient-to-r from-green-500 to-emerald-600 text-white px-8 py-4 rounded-full font-semibold hover:from-green-600 hover:to-emerald-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+          Build With Us
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+          </svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-br from-gray-900 to-black text-white py-12">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+        <div>
+          <a href="index.html" class="text-2xl font-bold mb-4 block">P1ΞON</a>
+          <p class="text-gray-400">Brightening the Future. Building together.</p>
+        </div>
+        <div class="flex space-x-6">
+          <a href="https://www.instagram.com/p1xion.official" aria-label="Instagram" class="text-gray-400 hover:text-pink-400 transition-all duration-300">
+            <i class="fab fa-instagram text-2xl"></i>
+          </a>
+          <a href="https://www.youtube.com/@p1xion" aria-label="YouTube" class="text-gray-400 hover:text-red-400 transition-all duration-300">
+            <i class="fab fa-youtube text-2xl"></i>
+          </a>
+          <a href="https://wa.me/+917559981062" target="_blank" rel="noopener" aria-label="WhatsApp" class="text-gray-400 hover:text-green-400 transition-all duration-300">
+            <i class="fab fa-whatsapp text-2xl"></i>
+          </a>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-8 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <p class="text-gray-500 text-sm">© <span id="year"></span> P1XION. All rights reserved.</p>
+        <div class="flex gap-6 text-sm">
+          <a href="services.html" class="text-gray-400 hover:text-white transition">Services</a>
+          <a href="projects.html" class="text-gray-400 hover:text-white transition">Projects</a>
+          <a href="team.html" class="text-gray-400 hover:text-white transition">Team</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => mobileNav.classList.toggle('hidden'));
+    mobileNav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => mobileNav.classList.add('hidden')));
+
+    // Load projects from JSON
+    async function loadProjects() {
+      try {
+        const response = await fetch('data/projects.json');
+        const projects = await response.json();
+        renderProjects(projects);
+      } catch (error) {
+        console.error('Error loading projects:', error);
+        document.getElementById('projectsContainer').innerHTML = '<div class="max-w-6xl mx-auto px-4 py-12 text-center text-red-500">Failed to load projects</div>';
+      }
+    }
+
+    function renderProjects(projects) {
+      const container = document.getElementById('projectsContainer');
+      const maxWidth = document.createElement('div');
+      maxWidth.className = 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8';
+      
+      // Status colors
+      const statusColors = {
+        'Completed': 'bg-green-100 text-green-700',
+        'In Progress': 'bg-yellow-100 text-yellow-700',
+        'Produced': 'bg-blue-100 text-blue-700'
+      };
+      
+      // Type colors
+      const typeColors = {
+        'PWA': 'bg-purple-100 text-purple-700',
+        'App': 'bg-indigo-100 text-indigo-700',
+        'Web Service': 'bg-cyan-100 text-cyan-700'
+      };
+      
+      maxWidth.innerHTML = `
+        <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+          ${projects.map(project => `
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col h-full w-full max-w-sm">
+              <div class="h-48 bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center p-6 flex-shrink-0">
+                <img src="${project.logo}" alt="${project.title}" class="max-h-full max-w-full object-contain" />
+              </div>
+              <div class="p-6 flex flex-col flex-grow">
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="${statusColors[project.status] || 'bg-gray-100 text-gray-700'} text-xs font-semibold px-3 py-1 rounded-full">${project.status}</span>
+                  <span class="${typeColors[project.type] || 'bg-gray-100 text-gray-700'} text-xs font-semibold px-3 py-1 rounded-full">${project.type}</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">${project.title}</h3>
+                <p class="text-gray-600 text-sm flex-grow">${project.short}</p>
+                ${project.website ? `<a href="${project.website}" target="_blank" rel="noopener" class="inline-flex items-center text-blue-600 hover:text-blue-700 text-sm font-medium mt-2"><i class="fas fa-globe mr-1"></i>Visit Website</a>` : ''}
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      `;
+      container.innerHTML = '';
+      container.appendChild(maxWidth);
+    }
+
+    loadProjects();
+  </script>
+</body>
+</html>
