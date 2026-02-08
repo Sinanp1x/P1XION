@@ -6,6 +6,15 @@
     "short": "A modern digital library system for campus book management",
     "status": "getting to start",
     "type": "PWA",
-    "website": "https://sinanp1x.vercel.app/"
+    "website": ""
+  }
+  {
+    "id": "Booking-system",
+    "title": "urdiCon",
+    "logo": "assets/project/urdicon.svg",
+    "short": "A urdi booking system for kerala da'wa students",
+    "status": "completed",
+    "type": "PWA",
+    "website": "https://www.urdicon.p1xion.app"
   }
 ]
