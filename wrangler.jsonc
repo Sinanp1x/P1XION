@@ -1,0 +1,9 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "p1xion",
+  "compatibility_date": "2026-05-19",
+  "assets": {
+    "directory": "public" 
+  },
+  "compatibility_flags": ["nodejs_compat"]
+}
