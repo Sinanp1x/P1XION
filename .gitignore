@@ -1,2 +1,4 @@
 node_modules/
 products/
+node_modules/
+package-lock.json
