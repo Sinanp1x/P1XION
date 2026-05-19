@@ -2,3 +2,108 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: #0b1326;
+	color: #dae2fd;
+	overflow-x: hidden;
+}
+
+.glass-card {
+	background: rgba(255, 255, 255, 0.04);
+	backdrop-filter: blur(12px);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+	background: rgba(255, 255, 255, 0.08);
+	border-color: #d0bcff;
+	transform: translateY(-4px);
+}
+
+.ambient-glow {
+	position: absolute;
+	width: 600px;
+	height: 600px;
+	border-radius: 50%;
+	background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, rgba(99, 102, 241, 0) 70%);
+	z-index: -1;
+	filter: blur(40px);
+	pointer-events: none;
+}
+
+.text-gradient {
+	background: linear-gradient(to right, #4edea3, #d0bcff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.material-symbols-outlined {
+	font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.site-shell {
+	width: 100%;
+}
+
+.site-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 50;
+}
+
+.site-header__backdrop {
+	background: rgba(11, 19, 38, 0.8);
+	backdrop-filter: blur(24px);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.site-header__nav-link {
+	transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.site-header__nav-link[data-active="true"] {
+	color: #4edea3;
+	border-bottom: 2px solid #4edea3;
+	padding-bottom: 0.25rem;
+	font-weight: 700;
+}
+
+.site-mobile-panel {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	margin: 0 1rem 1rem;
+	border-radius: 1rem;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	background: rgba(11, 19, 38, 0.96);
+	backdrop-filter: blur(24px);
+	box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.site-footer {
+	background: #060e20;
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.page-section {
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+}
+
+@media (min-width: 768px) {
+	.page-section {
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+}

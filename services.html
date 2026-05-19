@@ -1,185 +1,317 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>P1ΞON | Services</title>
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            'chakra': ['Chakra Petch', 'sans-serif'],
-          }
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services | P1ΞON</title>
+<meta name="description" content="Explore P1XION services for college projects, web development, and app development with WhatsApp-first contact."/>
+<meta name="robots" content="index, follow"/>
+<meta name="theme-color" content="#0b1326"/>
+<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="https://p1xion.app/services.html" rel="canonical"/>
+<meta property="og:title" content="Services | P1ΞON"/>
+<meta property="og:description" content="Explore P1XION services for college projects, web development, and app development with WhatsApp-first contact."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://p1xion.app/services.html"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Geist:wght@400;600;700&amp;family=Chakra+Petch:wght@500&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<script defer="defer" src="js/main.js"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error-container": "#93000a",
+                    "on-secondary-fixed-variant": "#2f2ebe",
+                    "error": "#ffb4ab",
+                    "cosmic-slate": "#111827",
+                    "on-primary-fixed": "#002113",
+                    "on-primary": "#003824",
+                    "secondary": "#c0c1ff",
+                    "surface-container-lowest": "#060e20",
+                    "on-surface": "#dae2fd",
+                    "tertiary-fixed-dim": "#d0bcff",
+                    "tertiary-fixed": "#e9ddff",
+                    "inverse-primary": "#006c49",
+                    "on-primary-container": "#00422b",
+                    "on-tertiary-fixed-variant": "#5516be",
+                    "glass-border": "rgba(255, 255, 255, 0.1)",
+                    "secondary-fixed-dim": "#c0c1ff",
+                    "primary-container": "#10b981",
+                    "on-secondary-container": "#b0b2ff",
+                    "on-tertiary": "#3c0091",
+                    "surface-variant": "#2d3449",
+                    "primary": "#4edea3",
+                    "on-error": "#690005",
+                    "on-tertiary-fixed": "#23005c",
+                    "tertiary": "#d0bcff",
+                    "background": "#0b1326",
+                    "surface-tint": "#4edea3",
+                    "on-error-container": "#ffdad6",
+                    "accent-glow": "rgba(99, 102, 241, 0.15)",
+                    "inverse-on-surface": "#283044",
+                    "on-tertiary-container": "#4600a7",
+                    "primary-fixed": "#6ffbbe",
+                    "surface-container-high": "#222a3d",
+                    "on-secondary-fixed": "#07006c",
+                    "on-background": "#dae2fd",
+                    "surface": "#0b1326",
+                    "inverse-surface": "#dae2fd",
+                    "surface-dim": "#0b1326",
+                    "surface-container-highest": "#2d3449",
+                    "primary-fixed-dim": "#4edea3",
+                    "surface-bright": "#31394d",
+                    "on-surface-variant": "#bbcabf",
+                    "outline-variant": "#3c4a42",
+                    "outline": "#86948a",
+                    "secondary-fixed": "#e1e0ff",
+                    "on-secondary": "#1000a9",
+                    "surface-container": "#171f33",
+                    "surface-container-low": "#131b2e",
+                    "on-primary-fixed-variant": "#005236",
+                    "secondary-container": "#3131c0",
+                    "tertiary-container": "#b090ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-desktop": "64px",
+                    "gutter": "24px",
+                    "margin-mobile": "20px",
+                    "container-max": "1280px",
+                    "section-gap": "120px"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Geist"],
+                    "body-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-lg": ["Geist"],
+                    "tech-accent": ["Chakra Petch"],
+                    "headline-xl": ["Geist"],
+                    "label-sm": ["Geist"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "tech-accent": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "500"}],
+                    "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.04);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
-      }
-    }
-  </script>
-  <style>
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    .animate-fade-in {
-      animation: fadeIn 0.6s ease-out forwards;
-    }
-    .animate-delay-1 { animation-delay: 0.1s; }
-    .animate-delay-2 { animation-delay: 0.2s; }
-    .animate-delay-3 { animation-delay: 0.3s; }
-  </style>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        .glass-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: #d0bcff;
+            transform: translateY(-4px);
+        }
+        .ambient-glow {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, rgba(139, 92, 246, 0.05) 50%, transparent 70%);
+            z-index: -1;
+            pointer-events: none;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
 </head>
+<body class="bg-background text-on-background min-h-screen font-body-md overflow-x-hidden" data-page="services">
+<div class="site-shell">
+<div data-site-header></div>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative py-section-gap px-margin-mobile md:px-margin-desktop overflow-hidden">
+<div class="ambient-glow -top-20 -left-20"></div>
+<div class="ambient-glow bottom-0 right-0" style="background: radial-gradient(circle, rgba(208, 188, 255, 0.1) 0%, transparent 70%);"></div>
+<div class="max-w-container-max mx-auto relative z-10 text-center">
+<span class="font-tech-accent text-tech-accent text-primary uppercase tracking-[0.2em] mb-4 block">Precision Engineered</span>
+<h1 class="font-headline-xl text-headline-xl md:text-[64px] mb-6 bg-clip-text text-transparent bg-gradient-to-r from-on-surface via-secondary to-tertiary">
+                    Our Services
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                    Merging high-fidelity technical expertise with forward-thinking design to manifest the next generation of digital infrastructure.
+                </p>
+</div>
+<div class="absolute inset-0 z-0 opacity-20">
+<div class="w-full h-full" style="background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px); background-size: 40px 40px;"></div>
+</div>
+</section>
+<!-- Services Grid -->
+<section class="pb-section-gap px-margin-mobile md:px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Service Card 1 -->
+<div class="glass-card rounded-xl overflow-hidden flex flex-col">
+<div class="h-32 w-full bg-gradient-to-br from-secondary-container to-background flex items-end p-6 relative">
+<div class="absolute top-6 right-6 px-3 py-1 bg-primary/20 border border-primary/30 rounded-full text-[10px] font-tech-accent text-primary uppercase tracking-wider">Produced</div>
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary border border-glass-border">
+<span class="material-symbols-outlined text-3xl">terminal</span>
+</div>
+</div>
+<div class="p-8 flex-grow">
+<h3 class="font-headline-lg text-headline-lg mb-4">Core Infrastructure</h3>
+<p class="text-on-surface-variant mb-6 text-sm leading-relaxed">Scalable, resilient back-end systems built for extreme concurrency and zero-downtime requirements in global fintech environments.</p>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                    Distributed Database Architecture
+                                </li>
+<li class="flex items-center gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                    Custom API Ecosystems
+                                </li>
+<li class="flex items-center gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                    Real-time Stream Processing
+                                </li>
+</ul>
+</div>
+</div>
+<!-- Service Card 2 -->
+<div class="glass-card rounded-xl overflow-hidden flex flex-col">
+<div class="h-32 w-full bg-gradient-to-br from-tertiary-container/30 to-background flex items-end p-6 relative">
+<div class="absolute top-6 right-6 px-3 py-1 bg-secondary/20 border border-secondary/30 rounded-full text-[10px] font-tech-accent text-secondary uppercase tracking-wider">Active</div>
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-secondary border border-glass-border">
+<span class="material-symbols-outlined text-3xl">token</span>
+</div>
+</div>
+<div class="p-8 flex-grow">
+<h3 class="font-headline-lg text-headline-lg mb-4">Web3 &amp; Decentralization</h3>
+<p class="text-on-surface-variant mb-6 text-sm leading-relaxed">Smart contract engineering and decentralized protocol design that prioritizes security, gas-efficiency, and trustless logic.</p>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-lg">check_circle</span>
+                                    EVM Contract Development
+                                </li>
+<li class="flex items-center gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-lg">check_circle</span>
+                                    Liquidity Engine Design
+                                </li>
+<li class="flex items-center gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-lg">check_circle</span>
+                                    On-chain Governance Models
+                                </li>
+</ul>
+</div>
+</div>
+<!-- Service Card 3 -->
+<div class="glass-card rounded-xl overflow-hidden flex flex-col">
+<div class="h-32 w-full bg-gradient-to-br from-primary-container/20 to-background flex items-end p-6 relative">
+<div class="absolute top-6 right-6 px-3 py-1 bg-tertiary/20 border border-tertiary/30 rounded-full text-[10px] font-tech-accent text-tertiary uppercase tracking-wider">Produced</div>
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-tertiary border border-glass-border">
+<span class="material-symbols-outlined text-3xl">blur_on</span>
+</div>
+</div>
+<div class="p-8 flex-grow">
+<h3 class="font-headline-lg text-headline-lg mb-4">Precision UI/UX</h3>
+<p class="text-on-surface-variant mb-6 text-sm leading-relaxed">Transforming complex technical data into intuitive, high-fidelity interfaces that feel like a high-end digital laboratory.</p>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-tertiary text-lg">check_circle</span>
+                                    Design System Architecture
+                                </li>
+<li class="flex items-center gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-tertiary text-lg">check_circle</span>
+                                    Micro-interaction Engineering
+                                </li>
+<li class="flex items-center gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-tertiary text-lg">check_circle</span>
+                                    Data Visualization Suites
+                                </li>
+</ul>
+</div>
+</div>
+<!-- Service Card 4 -->
+<div class="glass-card rounded-xl overflow-hidden flex flex-col lg:col-span-2">
+<div class="grid md:grid-cols-2">
+<div class="h-48 md:h-auto bg-surface-container relative">
+<div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/20 to-secondary/20">
+<span class="material-symbols-outlined text-6xl text-primary/30">psychology</span>
+</div>
+</div>
+<div class="p-8">
+<div class="px-3 py-1 inline-block bg-primary/20 border border-primary/30 rounded-full text-[10px] font-tech-accent text-primary uppercase tracking-wider mb-4">New Pipeline</div>
+<h3 class="font-headline-lg text-headline-lg mb-4">Applied Intelligence</h3>
+<p class="text-on-surface-variant mb-6 text-sm leading-relaxed">Integrating specialized LLM workflows and computer vision models into production environments with a focus on privacy and reliability.</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                            Custom LLM Fine-tuning
+                                        </li>
+</ul>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                            Predictive Analytics
+                                        </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Service Card 5 -->
+<div class="glass-card rounded-xl overflow-hidden flex flex-col">
+<div class="h-32 w-full bg-gradient-to-br from-error-container/20 to-background flex items-end p-6 relative">
+<div class="absolute top-6 right-6 px-3 py-1 bg-error/20 border border-error/30 rounded-full text-[10px] font-tech-accent text-error uppercase tracking-wider">Produced</div>
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-error border border-glass-border">
+<span class="material-symbols-outlined text-3xl">encrypted</span>
+</div>
+</div>
+<div class="p-8 flex-grow">
+<h3 class="font-headline-lg text-headline-lg mb-4">Cyber Resilience</h3>
+<p class="text-on-surface-variant mb-6 text-sm leading-relaxed">Zero-trust architecture implementation and cryptographic auditing to ensure your digital assets remain impenetrable.</p>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-error text-lg">check_circle</span>
+                                    Penetration Testing
+                                </li>
+<li class="flex items-center gap-3 text-sm text-on-surface">
+<span class="material-symbols-outlined text-error text-lg">check_circle</span>
+                                    </main>
+                                    <div data-site-footer></div>
+                                    </div>
+                                    <script>
+                                            // Micro-interaction: Mouse tracking glow effect for cards
+                                            document.querySelectorAll('.glass-card').forEach(card => {
+                                                card.addEventListener('mousemove', e => {
+                                                    const rect = card.getBoundingClientRect();
+                                                    const x = e.clientX - rect.left;
+                                                    const y = e.clientY - rect.top;
+                                                    card.style.setProperty('--mouse-x', `${x}px`);
+                                                    card.style.setProperty('--mouse-y', `${y}px`);
+                
+                                                    // Optional: subtle tilt effect
+                                                    const centerX = rect.width / 2;
+                                                    const centerY = rect.height / 2;
+                                                    const rotateX = (y - centerY) / 25;
+                                                    const rotateY = (centerX - x) / 25;
+                                                    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+                                                });
 
-<body class="font-chakra bg-gray-50 text-gray-800">
-  <!-- Header -->
-  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <a href="index.html" class="text-2xl font-bold text-gray-800">P1ΞON</a>
-      
-      <nav class="hidden md:flex">
-        <ul class="flex space-x-6">
-          <li><a href="index.html" class="text-gray-700 hover:text-blue-600 transition">Home</a></li>
-          <li><a href="index.html#about" class="text-gray-700 hover:text-blue-600 transition">About</a></li>
-          <li><a href="services.html" class="text-blue-600 font-semibold">Services</a></li>
-          <li><a href="projects.html" class="text-gray-700 hover:text-blue-600 transition">Projects</a></li>
-          <li><a href="team.html" class="text-gray-700 hover:text-blue-600 transition">Team</a></li>
-          <li><a href="index.html#build-with-us" class="text-green-600 font-semibold hover:text-green-700 transition">Build With Us</a></li>
-        </ul>
-      </nav>
-      
-      <button id="hamburger" class="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100" aria-label="Open menu">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-      </button>
-    </div>
-    
-    <nav id="mobileNav" class="hidden md:hidden bg-white border-t px-4 py-4">
-      <ul class="space-y-3">
-        <li><a href="index.html" class="block text-gray-700">Home</a></li>
-        <li><a href="index.html#about" class="block text-gray-700">About</a></li>
-        <li><a href="services.html" class="block text-blue-600 font-semibold">Services</a></li>
-        <li><a href="projects.html" class="block text-gray-700">Projects</a></li>
-        <li><a href="team.html" class="block text-gray-700">Team</a></li>
-        <li><a href="index.html#build-with-us" class="block text-green-600 font-semibold">Build With Us</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <!-- Hero -->
-    <section class="bg-gradient-to-br from-indigo-900 via-blue-900 to-purple-900 py-20 md:py-28">
-      <div class="max-w-5xl mx-auto px-4 text-center">
-        <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in">Our Services</h1>
-        <p class="text-blue-100 text-lg md:text-xl max-w-2xl mx-auto animate-fade-in animate-delay-1">
-          We build technology solutions that matter. From robotics to web apps, we turn ideas into working products.
-        </p>
-      </div>
-    </section>
-
-    <!-- Services Grid -->
-    <section class="py-20 md:py-28 bg-gray-50">
-      <div class="max-w-6xl mx-auto px-4">
-        <div id="servicesGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Services loaded dynamically from data/services.json -->
-          <div class="col-span-full text-center py-12 text-gray-500">Loading services...</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="py-16 bg-gradient-to-r from-green-600 to-emerald-600">
-      <div class="max-w-4xl mx-auto px-4 text-center">
-        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Have a Project Idea?</h2>
-        <p class="text-green-100 text-lg mb-8">We're not just offering services - we're looking for collaborators. Build with us and share in the success.</p>
-        <a href="https://wa.me/+917559981062?text=Hey!%20I%20have%20a%20project%20idea!" target="_blank" rel="noopener" class="inline-flex items-center bg-white text-green-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-green-50 transition-all duration-300 transform hover:scale-105 shadow-lg">
-          <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
-          </svg>
-          Let's Talk
-        </a>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="bg-gradient-to-br from-gray-900 to-black text-white py-12">
-    <div class="max-w-5xl mx-auto px-4">
-      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
-        <div>
-          <a href="index.html" class="text-2xl font-bold mb-4 block">P1ΞON</a>
-          <p class="text-gray-400">Brightening the Future. Building together.</p>
-        </div>
-        <div class="flex space-x-6">
-          <a href="https://www.instagram.com/p1xion.official" aria-label="Instagram" class="text-gray-400 hover:text-pink-400 transition-all duration-300">
-            <i class="fab fa-instagram text-2xl"></i>
-          </a>
-          <a href="https://www.youtube.com/@p1xion" aria-label="YouTube" class="text-gray-400 hover:text-red-400 transition-all duration-300">
-            <i class="fab fa-youtube text-2xl"></i>
-          </a>
-          <a href="https://wa.me/+917559981062" target="_blank" rel="noopener" aria-label="WhatsApp" class="text-gray-400 hover:text-green-400 transition-all duration-300">
-            <i class="fab fa-whatsapp text-2xl"></i>
-          </a>
-        </div>
-      </div>
-      <div class="border-t border-gray-800 mt-8 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
-        <p class="text-gray-500 text-sm">© <span id="year"></span> P1XION. All rights reserved.</p>
-        <div class="flex gap-6 text-sm">
-          <a href="services.html" class="text-gray-400 hover:text-white transition">Services</a>
-          <a href="projects.html" class="text-gray-400 hover:text-white transition">Projects</a>
-          <a href="team.html" class="text-gray-400 hover:text-white transition">Team</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    const hamburger = document.getElementById('hamburger');
-    const mobileNav = document.getElementById('mobileNav');
-    hamburger.addEventListener('click', () => mobileNav.classList.toggle('hidden'));
-    mobileNav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => mobileNav.classList.add('hidden')));
-
-    // Load services from JSON
-    async function loadServices() {
-      try {
-        const response = await fetch('data/services.json');
-        const services = await response.json();
-        renderServices(services);
-      } catch (error) {
-        console.error('Error loading services:', error);
-        document.getElementById('servicesGrid').innerHTML = '<div class="col-span-full text-center py-12 text-red-500">Failed to load services</div>';
-      }
-    }
-
-    function renderServices(services) {
-      const grid = document.getElementById('servicesGrid');
-      grid.innerHTML = services.map((service, index) => `
-        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 opacity-0 animate-fade-in" style="animation-delay: ${index * 0.1}s">
-          <div class="h-48 bg-gradient-to-br ${service.gradient} flex items-center justify-center">
-            <i class="fas ${service.icon} text-white text-6xl"></i>
-          </div>
-          <div class="p-6">
-            <div class="flex items-center justify-between mb-3">
-              <h3 class="text-xl font-bold text-gray-800">${service.title}</h3>
-              ${service.status ? `<span class="bg-yellow-100 text-yellow-700 text-xs font-semibold px-3 py-1 rounded-full">${service.status}</span>` : ''}
-            </div>
-            <p class="text-gray-600 mb-4">${service.details}</p>
-            <ul class="text-sm text-gray-500 space-y-2">
-              ${service.features.map(f => `<li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> ${f}</li>`).join('')}
-            </ul>
-          </div>
-        </div>
-      `).join('');
-    }
-
-    loadServices();
-  </script>
-</body>
-</html>
+                                                card.addEventListener('mouseleave', () => {
+                                                    card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)';
+                                                });
+                                            });
+                                        </script>
+</body></html>

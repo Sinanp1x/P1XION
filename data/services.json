@@ -1,56 +1,66 @@
 [
   {
-    "id": "robotics",
-    "title": "Robotics Projects",
-    "icon": "fa-robot",
-    "gradient": "from-blue-500 to-indigo-600",
-    "bgGradient": "from-blue-50 to-indigo-100",
-    "borderColor": "border-blue-100",
-    "short": "Robotics projects from ideas to prototype.",
-    "details": "Full-stack robotics: mechanics, controls, firmware, and fleet orchestration. From idea to working prototype.",
-    "status": "Coming Soon",
+    "id": "college-projects",
+    "title": "College Projects Help",
+    "icon": "school",
+    "accent": "primary",
+    "badge": "Available",
+    "short": "Guidance, planning, and delivery support for student projects.",
+    "details": "Need a final-year project, mini-project, or technical college submission? We help with planning, architecture, implementation, and clean presentation.",
     "features": [
-      "Mechanical Design",
-      "Electronics & Controls",
-      "Firmware Development",
-      "Testing & Iteration"
+      "Project Planning",
+      "Implementation Support",
+      "Demo Preparation",
+      "Report Guidance"
     ],
-    "phone": "+91 7559981062"
+    "contact": "https://wa.me/+917559981062"
   },
   {
     "id": "web",
     "title": "Website Creation",
-    "icon": "fa-globe",
-    "gradient": "from-purple-500 to-pink-600",
-    "bgGradient": "from-purple-50 to-pink-100",
-    "borderColor": "border-purple-100",
+    "icon": "language",
+    "accent": "tertiary",
+    "badge": "Available",
     "short": "Fast, accessible websites with great UX.",
     "details": "Fast, accessible websites with great UX. Design systems, SEO-ready structure, performance-first builds.",
-    "status": "Coming Soon",
     "features": [
       "Custom Design",
       "Responsive & Mobile-First",
       "SEO Optimization",
       "Fast Loading"
     ],
-    "phone": "+91 7559981062"
+    "contact": "https://wa.me/+917559981062"
   },
   {
     "id": "app",
     "title": "App Development",
-    "icon": "fa-mobile-alt",
-    "gradient": "from-green-500 to-emerald-600",
-    "bgGradient": "from-green-50 to-emerald-100",
-    "borderColor": "border-green-100",
+    "icon": "smartphone",
+    "accent": "secondary",
+    "badge": "Available",
     "short": "Cross-platform & native apps.",
     "details": "Cross-platform & native apps. Native features, offline-first design, robust backends and CI/CD.",
-    "status": "Coming Soon",
     "features": [
       "iOS & Android",
       "PWA Support",
       "Offline-First",
       "Cloud Integration"
     ],
-    "phone": "+91 7559981062"
+    "contact": "https://wa.me/+917559981062"
+  },
+  {
+    "id": "stratum",
+    "title": "Stratum Integration",
+    "icon": "schema",
+    "accent": "primary",
+    "badge": "Available",
+    "short": "Setup and integration of Stratum project planning system.",
+    "details": "We deploy and customize Stratum for your team to map requirements, track deliverables, and keep projects moving with clarity.",
+    "features": [
+      "Custom Setup",
+      "Team Onboarding",
+      "Workflow Integration",
+      "Dedicated Support"
+    ],
+    "contact": "https://wa.me/+917559981062"
   }
 ]

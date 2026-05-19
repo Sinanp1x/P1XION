@@ -1,20 +1,32 @@
 [
   {
-    "id": "Digital-Library",
+    "id": "digital-library",
     "title": "Al-Burhan Digital Library",
     "logo": "assets/project/Digi-lib.png",
     "short": "A modern digital library system for campus book management",
-    "status": "getting to start",
+    "details": "A modern digital library system for campus book management.",
+    "badge": "Getting to start",
     "type": "PWA",
     "website": ""
   },
   {
-    "id": "Booking-system",
+    "id": "urdicon",
     "title": "urdiCon",
     "logo": "assets/project/urdicon.svg",
     "short": "A urdi booking system for kerala da'wa students",
-    "status": "completed",
+    "details": "A urdi booking system for kerala da'wa students.",
+    "badge": "Completed",
     "type": "PWA",
     "website": "https://urdicon.p1xion.app"
+  },
+  {
+    "id": "stratum",
+    "title": "Stratum",
+    "logo": "assets/project/stratum.png",
+    "short": "A project planning system for teams that need structured delivery and clear milestones.",
+    "details": "Stratum helps map requirements, track deliverables, and keep student and startup projects moving with clarity.",
+    "badge": "Planning",
+    "type": "Planner",
+    "website": "https://stratum.p1xion.app"
   }
 ]

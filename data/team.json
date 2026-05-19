@@ -1,15 +1,37 @@
-[
-  {
+{
+  "founder": {
     "id": "sinan",
     "name": "Muhammed Sinan P",
     "role": "Founder & Developer",
-    "photo": "assets/team/pic.jpg",
     "bio": "Passionate about building products that matter. Leading P1XION with a vision of collaborative innovation and equal opportunity.",
-    "isFounder": true,
-    "portfolio": "https://sinanp1x.vercel.app",
+    "portfolio": "https://muhammedsinanp1x.netlify.app",
     "social": {
       "instagram": "https://www.instagram.com/p1xion.official",
-      "whatsapp": "https://wa.me/+917559981062"
+      "whatsapp": "https://wa.me/+917559981062",
+      "linkedin": "https://www.linkedin.com/in/muhammedsinanp1x"
     }
-  }
-]
+  },
+  "openRoles": [
+    {
+      "title": "Lead Developer",
+      "description": "Ready to lead the next technical breakthrough?",
+      "icon": "developer_mode",
+      "accent": "primary",
+      "action": "Apply Now"
+    },
+    {
+      "title": "Product Designer",
+      "description": "Help us define the future of interfaces.",
+      "icon": "developer_mode",
+      "accent": "tertiary",
+      "action": "Apply Now"
+    },
+    {
+      "title": "Your Role?",
+      "description": "Don't see a fit? Pitch us your unique talent.",
+      "icon": "developer_mode",
+      "accent": "secondary",
+      "action": "Pitch Us"
+    }
+  ]
+}
